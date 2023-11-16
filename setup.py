@@ -20,9 +20,9 @@ setup(
     name='rasa-skill',
     version=get_version(),
     description='OVOS Skill for Rasa Integration',
-    url='https://github.com/YourGitHub/rasa-skill',  # Replace with your repository URL
-    author='Your Name',
-    author_email='your.email@example.com',
+    url='https://github.com/svhozt/rasa-skill',  # Replace with your repository URL
+    author='svhozt',
+    author_email='nasvimukthi23@gmail.com',
     license='MIT',
     packages=['rasa_skill'],  # Replace with the name of your skill's Python package
     zip_safe=True,
