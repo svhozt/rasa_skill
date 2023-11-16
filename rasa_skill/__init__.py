@@ -29,9 +29,11 @@ class RasaSocketClient:
 
 
 class RasaSkill(MycroftSkill):
-    def __init__(self):
+    def __init__(self, name, config, blacklist=None):
         super(RasaSkill, self).__init__("RasaSkill")
         # Update this URL to point to your Rasa server
+        self.name = name
+        self.config = config
         self.rasa_client = RasaSocketClient("http://host.docker.internal:5005")
 
     @intent_handler('ask_rasa.intent')
